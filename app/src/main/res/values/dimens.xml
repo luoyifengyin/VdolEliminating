@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tile_radius">5dp</dimen>
+    <dimen name="gameview_radius">1dp</dimen>
+    <dimen name="cell_padding">2dp</dimen>
+    <dimen name="gameview_padding">1dp</dimen>
+    <dimen name="effect_burst_border">3dp</dimen>
+    <dimen name="board_radius">5dp</dimen>
+    <dimen name="item_size">50dp</dimen>
+    <dimen name="score_mat_translatey">-7dp</dimen>
+</resources>

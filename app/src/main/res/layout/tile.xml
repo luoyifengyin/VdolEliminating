@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.vdoleliminating.core.Tile xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_columnWeight="1"
+    app:layout_rowWeight="1"
+    tools:layout_height="100dp"
+    tools:layout_width="100dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/cell_padding"
+        app:riv_corner_radius="@dimen/tile_radius"
+        app:riv_mutate_background="true"
+        android:src="@drawable/p0" />
+
+    <ImageView
+        android:id="@+id/horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/effect_horizontal"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/effect_vertical"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/selected"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="\?"
+        android:autoSizeTextType="uniform"
+        app:autoSizeTextType="uniform"
+        android:textColor="@color/colorText"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+</com.example.vdoleliminating.core.Tile>

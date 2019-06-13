@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.vdoleliminating.core.Item xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/item_size"
+    android:layout_height="@dimen/item_size"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/ItemImage"
+        tools:src="@drawable/refresh_item"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/cnt"
+        style="@style/ItemCornerMark"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginEnd="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:text="1"
+        tools:ignore="HardcodedText" />
+
+</com.example.vdoleliminating.core.Item>

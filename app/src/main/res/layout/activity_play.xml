@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.vdoleliminating.view.InTheLightOfDarkness
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkness"
+    tools:context=".PlayActivity"
+    tools:ignore="SpUsage,HardcodedText,ContentDescription">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/bg0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/layer_back_button"/>
+
+                <LinearLayout
+                    android:id="@+id/score_board"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_score_bg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:text="@string/score"
+                        android:textColor="@color/colorText"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorText"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <android.support.v7.widget.GridLayout
+                    android:id="@+id/mission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:rowCount="2"
+                    app:columnCount="3"
+                    app:orientation="horizontal">
+
+                    <include layout="@layout/task"/>
+
+                    <include layout="@layout/task"/>
+
+                    <include layout="@layout/task"/>
+
+                    <include layout="@layout/task"/>
+
+                    <include layout="@layout/task"/>
+
+                    <include layout="@layout/task"/>
+
+                </android.support.v7.widget.GridLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layer_step_bg">
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/rest_step"
+                        android:textColor="@color/colorText"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/step"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/stepText"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:text="35" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/playground"
+                layout="@layout/view_game" />
+
+            <com.example.vdoleliminating.view.square.GridSquare
+                android:id="@+id/score_matrix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:orientation="horizontal"
+                android:translationY="@dimen/score_mat_translatey">
+
+            </com.example.vdoleliminating.view.square.GridSquare>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+
+                <include android:id="@+id/refresh"
+                    layout="@layout/item"/>
+
+                <include android:id="@+id/back"
+                    layout="@layout/item"/>
+
+                <include android:id="@+id/swap"
+                    layout="@layout/item"/>
+
+                <include android:id="@+id/eliminate"
+                    layout="@layout/item"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include android:id="@+id/game_opening"
+        layout="@layout/opening_chat"/>
+
+    <com.example.vdoleliminating.view.StrokeTextView
+        android:id="@+id/bonus_opening"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorMask"
+        android:text="@string/bonus_time"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/bonusText"
+        app:textStrokeColor="@color/colorText"
+        app:textStrokeWidth="3dp"
+        android:alpha="0"
+        tools:alpha="1"/>
+
+    <include android:id="@+id/item_description"
+        layout="@layout/item_description"/>
+
+</com.example.vdoleliminating.view.InTheLightOfDarkness>

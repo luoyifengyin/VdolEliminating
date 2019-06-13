@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="eliminate_duration">300</integer>
+    <integer name="score_appear_duration">100</integer>
+    <integer name="score_show_duration">195</integer>
+    <integer name="bonus_tile_duration">150</integer>
+    <integer name="bonus_opening_appear">100</integer>
+    <integer name="bonus_opening_wait">800</integer>
+    <integer name="magic_enlarge_duration">200</integer>
+    <integer name="magic_enlarge_wait">400</integer>
+    <integer name="game_opening_appear">500</integer>
+    <integer name="game_opening_wait">2000</integer>
+</resources>

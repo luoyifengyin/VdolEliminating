@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:top="@dimen/cell_padding"
+        android:bottom="@dimen/cell_padding"
+        android:left="@dimen/cell_padding"
+        android:right="@dimen/cell_padding">
+
+        <shape>
+
+            <corners android:radius="@dimen/tile_radius"/>
+
+            <solid android:color="@color/cell"/>
+
+        </shape>
+
+    </item>
+
+</layer-list>

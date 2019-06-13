@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+
+    <set android:ordering="together">
+
+        <objectAnimator
+            android:duration="@integer/bonus_tile_duration"
+            android:propertyName="scaleX"
+            android:valueFrom="1f"
+            android:valueTo="1.4f"
+            android:valueType="floatType"/>
+
+        <objectAnimator
+            android:duration="@integer/bonus_tile_duration"
+            android:propertyName="scaleY"
+            android:valueFrom="1f"
+            android:valueTo="1.4f"
+            android:valueType="floatType"/>
+
+    </set>
+
+    <set android:ordering="together">
+
+        <objectAnimator
+            android:duration="@integer/bonus_tile_duration"
+            android:propertyName="scaleX"
+            android:valueFrom="1.3f"
+            android:valueTo="1f"
+            android:valueType="floatType"/>
+
+        <objectAnimator
+            android:duration="@integer/bonus_tile_duration"
+            android:propertyName="scaleY"
+            android:valueFrom="1.3f"
+            android:valueTo="1f"
+            android:valueType="floatType"/>
+
+    </set>
+
+</set>

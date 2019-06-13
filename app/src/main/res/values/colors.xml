@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="blue">#6f6fff</color>
+    <color name="red">#ff373a</color>
+    <color name="yellow">#fdff01</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="purple">#b8f</color>
+    <color name="cyan">#1fd2b8</color>
+    <color name="t0">@color/blue</color>
+    <color name="t1">@color/pink</color>
+    <color name="t2">@color/red</color>
+    <color name="t3">@color/yellow</color>
+    <color name="t4">@color/purple</color>
+    <color name="t5">@color/cyan</color>
+
+    <color name="playgroundBgcolor">#8000</color>
+    <color name="cell">#6000</color>
+    <color name="effectLineArrow">#11f</color>
+    <color name="effectBurst">#f90</color>
+    <color name="selected">#afff</color>
+    <color name="colorText">#fff</color>
+    <color name="board">#8f80</color>
+    <color name="stepBgcolor">#c210</color>
+    <color name="stepText">#fe0</color>
+    <color name="scoreBgcolor">#80d0</color>
+    <color name="taskBgcolor">#cff8</color>
+    <color name="taskNumberStroke">#ffc</color>
+    <color name="missionComplete">#0f0</color>
+    <color name="colorMask">#8000</color>
+    <color name="bubbleTint">#ccf</color>
+    <color name="corner_mark">#f00</color>
+    <color name="itemText">#ff0</color>
+    <color name="bonusText">#fc0</color>
+</resources>

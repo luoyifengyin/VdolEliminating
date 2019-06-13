@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">歌姬消消乐</string>
+    <string name="rest_step">剩余步数</string>
+    <string name="score">分数</string>
+    <string name="shuffle">没有歌姬可以消除了</string>
+    <string name="bonus_time">Bonus Time</string>
+
+    <string name="game_over">Game Over</string>
+    <string name="fail_content">挑战失败，请重新开始游戏！</string>
+    <string name="win">You Win</string>
+    <string name="win_content">恭喜你，挑战成功！</string>
+    <string name="replay">重新挑战</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出游戏</string>
+    <string name="return_menu">返回主菜单</string>
+    <string name="restart">重新开始游戏</string>
+
+    <string name="refresh">刷新</string>
+    <string name="back">后退1步</string>
+    <string name="swap">强制交换</string>
+    <string name="eliminate">小木槌</string>
+    <string name="swap_description">能交换任意两位相邻歌姬或特效</string>
+    <string name="eliminate_description">能消除一位歌姬</string>
+    <string name="cannot_use_item">您现在无法使用此道具</string>
+    <string name="have_no_item">您现在暂未拥有此道具</string>
+    <string name="cannot_back">您现在无法后退1步</string>
+    <string name="opening_chat_content">消除足够数量的指定歌姬</string>
+</resources>

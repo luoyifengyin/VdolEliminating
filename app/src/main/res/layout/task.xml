@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer_task_bg">
+
+        <include android:id="@+id/tile"
+            layout="@layout/tile"
+            tools:layout_width="50dp"
+            tools:layout_height="50dp"/>
+
+    </FrameLayout>
+
+    <com.example.vdoleliminating.view.StrokeTextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|bottom"
+        android:gravity="end|bottom"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        app:textStrokeWidth="2dp"
+        app:textStrokeColor="@color/taskNumberStroke"
+        tools:text="20"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/mission_complete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/mission_complete"
+        android:visibility="gone"/>
+
+</FrameLayout>
